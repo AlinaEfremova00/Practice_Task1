@@ -1,0 +1,155 @@
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  padding: 16px;
+  overflow-y: auto;
+}
+
+.modal {
+  width: 640px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  max-height: 90vh;
+  overflow: auto;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #21222C;
+  flex: 1;
+  text-align: left;
+  margin: 0;
+}
+
+.close-button {
+  border: none;
+  background: transparent;
+  font-size: 24px;
+  color: #21222C;
+  cursor: pointer;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  gap: 8px;
+  width: 100%;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #21222C;
+}
+
+.form-group input,
+.form-group select {
+  height: 32px;
+  padding: 0 12px;
+  border: 1px solid #D1D1D1;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  color: #21222C;
+  background-color: #ffffff;
+  outline: none;
+}
+
+.form-group input::placeholder,
+.form-group select:invalid {
+  color: #888888;
+}
+
+.add-friend-section {
+  margin-bottom: 20px;
+}
+
+.add-friend-section button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: transparent;
+  color: #21222C;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.add-friend-section button:hover {
+  background-color: #f0f0f0;
+}
+
+.friend-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.friend-fields input,
+.friend-fields select{
+  height: 32px;
+  padding: 0 12px;
+  border: 1px solid #D1D1D1;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  color: #21222C;
+  background-color: #ffffff;
+  outline: none;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-start;
+  padding: 8px 0px ;
+  gap: 16px;
+  background-color: #fff;
+}
+
+.btn-secondary {
+  background-color: #E2E3E9;
+  color: #21222C;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #21222C;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+}
